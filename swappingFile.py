@@ -1,0 +1,12 @@
+def swapFileData():
+   filePath1 = input("Tell me the path of first file that You want to swap with: ")
+   filePath2 = input("Tell me the path of the second file you want to swap with: ")
+   file1 = open(filePath1, "r")
+   data_a = file1.read()
+   file2 = open(filePath2, "r")
+   data_b = file2.read()
+   writeFile1 = open(filePath1, "w")
+   writeFile1.write(data_b)
+   writeFile2 = open(filePath2, "w")
+   writeFile2.write(data_a)
+swapFileData()
